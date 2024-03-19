@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./build.css" rel="stylesheet" />
+</head>
+<body class="w-full h-screen flex flex-col">
+  <nav class="header">
+    <div class="px-3">
+      <a href="./index.html" class="hover-gradient"> Amol Rama </a>
+    </div>
+    <div class="grow"></div>
+    <div class="header-link">
+      <a href="./index.html">Home</a>
+    </div>
+    <div class="header-link">
+      <a href="./portfolio.html">Portfolio</a>
+    </div>
+    <div class="header-link">
+      <a href="./resume.html">Resume</a>
+    </div>
+    <div class="grow"></div>
+    <a href="./contact.html">
+      <div class="contact group">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="stroke-gray-50 w-8 h-8 pr-2 group-hover:stroke-green-200"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+          />
+          <path d="M3 7l9 6l9 -6" />
+        </svg>
+        Contact Me
+      </div>
+    </a>
+  </nav>
+  <main class="p-8 grow">
+    <h1 class="text-4xl font-foundation pb-4">Portfolio</h1>
+    <p>
+      Below are some projects I worked on. Attached below with them are links to
+      any live websites, or any public code repositories.
+    </p>
+
+    <div class="flex justify-center items-center">
+      <ul
+        class="grid lg:grid-cols-2 grid-cols-1 w-full py-8 gap-8 max-w-[1000px]"
+      >
+        <li class="flex justify-center items-center flex-col">
+          <h1 class="portfolio-link">
+            <a href="https://my.randommath.com">My Random Math</a>
+          </h1>
+          <img src="./images/flash.png" class="max-h-full max-w-full" />
+          <p class="text-center max-w-full">
+            At Random Math, I helped develop an authentication to use in their
+            in-house testing application,
+            <a href="https://www.flash.randommath.com/" class="link"
+              >Math Flash.</a
+            >
+            This essentially serves as the IDP and an OAuth server for other
+            applications hosted by Random Math.
+          </p>
+        </li>
+        <li class="flex justify-center items-center flex-col">
+          <h1 class="portfolio-link">
+            <a href="https://github.com/cm090/gradescope-autograder"
+              >CSSE 220 Autograder</a
+            >
+          </h1>
+          <img src="./images/autograder.png" class="max-h-full max-w-full" />
+          <p class="text-center max-w-full">
+            As a teaching assistant for CSSE 220, I helped develop
+            <a
+              href="https://github.com/cm090/gradescope-autograder"
+              class="link"
+              >the autograder.</a
+            >
+            This helps other graders save time by taking several menial steps
+            out of grading, including not having to compile a separate project
+            for each student.
+          </p>
+        </li>
+        <li class="flex justify-center items-center flex-col">
+          <h1 class="portfolio-link">
+            <a href="https://github.com/discord-contest-bot/discord-contest-bot"
+              >Discord Contest Bot</a
+            >
+          </h1>
+          <img src="./images/bot.png" class="max-h-full max-w-full" />
+          <p class="text-center max-w-full">
+            One of my passion projects was to create a bot capable of displaying
+            problems from various math competitions. This was done by
+            essentially creating a database with all the problems and then
+            parsing user input to give them a matching problem. This project is
+            now archived.
+          </p>
+        </li>
+        <li class="flex justify-center items-center flex-col">
+          <h1 class="portfolio-link">
+            <a href="https://nicecontest.xyz">NICE Math</a>
+          </h1>
+          <img src="./images/nice.png" class="max-h-full max-w-full" />
+          <p class="text-center max-w-full">
+            One of the projects I worked on with my friends was creating a
+            high-quality computational and Mock Olympiad contest, that would
+            replace the Online Math Olympiad series. We ran a total of 5
+            successful contests on the platform, which I helped develop both the
+            problems and the testing platform.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="w-full p-4 flex font-foundation box-border">
+      <div>© 2024, Amol Rama</div>
+      <div class="grow"></div>
+      <div>
+        Concerns? Find me at
+        <a href="mailto:amol.rama@rose-hulman.edu">amol.rama@rose-hulman.edu</a
+        >.
+      </div>
+    </div>
+  </footer>
+</body>
